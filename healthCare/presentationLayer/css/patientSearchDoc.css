@@ -1,0 +1,95 @@
+
+.searchDoctorForm label,text{
+    display: block;
+}
+.searchDoctorForm  input{
+    padding: 7px 15px;
+    margin: 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.searchDoctorForm input[type=date]{
+    padding: 5px 15px;
+}
+.searchDoctorForm  select{
+    display: block;
+    padding: 7px 15px;
+    margin :0;
+    box-sizing: border-box;
+    border: 1px solid #2d2d2d;
+    background-color: #fff;
+}
+.searchBtn{
+    background-color: #4CAF50;
+    color: white;
+    height:35px;
+    margin-left:3%;
+    margin-top:20px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+}
+.searchBtn:hover {
+    opacity:1;
+}
+.bookAppDiv{
+    margin-left:5%;
+    display: block;
+}
+
+.bookBtn{
+    background-color: #1565C0;
+    color: white;
+    font-size: 14px;
+    padding: 16px 10px;
+    margin-left: 5%;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+.bookAppFormContainer {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.bookAppForm{
+    padding:16px;
+    background-color: #2d2d2d;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+
+}
+.bookAppForm label,text{
+    display: block;padding:5px 0px 5px 0px
+}
+.bookAppForm input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.bookingBtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.bookingBtn:hover {
+    opacity:1;
+}

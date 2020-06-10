@@ -1,0 +1,29 @@
+.updateAccountForm label,text{
+    display: block;padding:5px 0px 5px 0px
+}
+.updateAccountForm{
+    margin-left:15%;
+    width: 80%;
+
+}
+.updateAccountForm input[type=text], .updateAccountForm input[type=password],.updateAccountForm input[type=email] {
+    padding: 8px 15px;
+    margin: 0px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.updateAccountForm hr{
+    width: 60%;
+    margin-left: 0px;
+}
+.updateBtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    margin-left: 10%;
+
+}

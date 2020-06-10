@@ -1,0 +1,64 @@
+.showFeedbackFormBtn{
+    background-color: #1565C0;
+    color: white;
+    font-size: 14px;
+    padding: 16px 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    position:fixed;
+    right:1%;
+    bottom:3%
+}
+.showFeedbackFormBtn:hover {
+    opacity:1;
+}
+.feedbackFormContainer {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.feedbackForm{
+    padding:16px;
+    background-color: #2d2d2d;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+
+}
+.feedbackForm label,text{
+    display: block;padding:5px 0px 5px 0px
+}
+.feedbackForm input[type=text] {
+    width:auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.feedbackForm textarea{
+    resize: none;
+    width: 100%;
+}
+.feedbackBtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+
+}
+.feedbackBtn:hover {
+    opacity:1;
+}

@@ -1,0 +1,21 @@
+label,text{
+    display: block;padding:5px 0px 5px 0px
+}
+input[type=text]{
+    padding: 6px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.btn:hover {
+    opacity:1;
+}

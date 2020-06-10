@@ -1,0 +1,171 @@
+
+<!doctype html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <title>D&P Portal</title>
+    <link rel="stylesheet" href="css/welcome.css">
+</head>
+
+<body>
+<h1 style="text-align: center">Welcome</h1>
+<h2 style="text-align: center; margin-bottom: 0px">We Care For Your Health Join Us Now</h2>
+<div style="display:flex">
+    <form action="../applicationLayer/register.php" class="signUpForm" method="post">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <div style="float:left;margin-right:20px;"><label for="signUpName"><b>Name</b></label>
+            <input type="text" pattern="[a-zA-Z]+" placeholder="Enter Name" name="signUpName" required></div>
+        <div style="float:left;"><label for="signUpEmail"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="signUpEmail" required></div>
+        <br style="clear:both;"/>
+        <div style="float:left;margin-right:20px;"><label for="signUpPsw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="signUpPsw" required></div>
+        <div style="float:left;">
+            <label for="signUpPhoneNum"><b>Phone Number</b></label>
+            <input type="text" pattern="[0-9]+" maxlength="11" placeholder="Enter phone number" name="signUpPhoneNum" required>
+        </div>
+        <br style="clear:both;"/>
+        <div style="float:left;">
+            <p style="margin-top:10px;margin-bottom: 5px">Please select your gender:</p>
+            <div style="float:left;margin-right:38px;">
+                <input style="display:inline" type=radio name="gender" id="male" value="male" required>
+                <label style="display:inline" for="male"><b>Male</b></label>
+            </div>
+            <div style="float:left;">
+                <input style="display:inline" type=radio name="gender" id="female" value="female" required>
+                <label style="display:inline" for="female"><b>Female</b></label>
+            </div>
+        </div>
+        <br style="clear:both;"/>
+        <p style="margin-bottom:5px;margin-top:10px">Sign Up As:</p>
+        <div style="float:left;margin-right:20px;">
+            <input style="display:inline" type=radio name="type" id="patient" value="patient" onclick="hideOrganDiv();hideDoctorDiv();" required>
+            <label style="display:inline" for="patient"><b>Patient</b></label>
+        </div>
+        <div style="float:left;margin-right:20px;">
+            <input style="display:inline" type=radio name="type" id="doctor" value="doctor" onclick="hideOrganDiv();showDoctorDiv();" required>
+            <label style="display:inline" for="doctor"><b>Doctor</b></label>
+        </div>
+        <div style="float:left;">
+            <input style="display:inline" type=radio name="type" id="organDonor" value="organ" onclick="showOrganDiv();hideDoctorDiv();" required>
+            <label style="display:inline" for="organDonor"><b>Organ Donor</b></label>
+        </div>
+        <br>
+        <div class="doctorDiv" id="doctorDiv">
+            <label for="docSpec"><b>Choose Specialization:</b></label>
+            <select id="docSpec" name="docSpec" required>
+                <option value="">Choose Doctor Specialization</option>
+                <option value="Pediatrician">Pediatrician</option>
+                <option value="Obstetrician">Obstetrician</option>
+                <option value="Surgeon">Surgeon</option>
+                <option value="Psychiatrist">Psychiatrist</option>
+                <option value="Cardiologist">Cardiologist</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Endocrinologist">Endocrinologist</option>
+                <option value="Nephrologist">Nephrologist</option>
+                <option value="Ophthalmologist">Ophthalmologist</option>
+                <option value="Neurologist">Neurologist</option>
+                <option value="Radiologist">Radiologist</option>
+            </select>
+        </div>
+        <div class="organDiv" id="organDiv">
+            <label for="organ"><b>Choose Organ you would like to donate:</b></label>
+            <select id="organ" name="organ">
+                <option value="">Select an organ</option>
+                <option value="liver">Portion of the Liver</option>
+                <option value="lung">Lung</option>
+                <option value="kidney">Kidney</option>
+                <option value="pancreas">Pancreas</option>
+                <option value="intestine">Intestine</option>
+                <option value="eye">Eye</option>
+            </select>
+            <label for="bloodType"><b>Choose your blood type:</b></label>
+            <select id="bloodType" name="bloodType">
+                <option value="">Select your blood type</option>
+                <option value="a+">A+</option>
+                <option value="a-">A-</option>
+                <option value="b+">B+</option>
+                <option value="b-">B-</option>
+                <option value="ab+">AB+</option>
+                <option value="ab-">AB-</option>
+                <option value="o+">O+</option>
+                <option value="o-">O-</option>
+            </select>
+
+        </div>
+        <br style="clear:both;"/>
+        <button type="submit" name ="signUpBtn" class="signUpBtn">Sign Up</button>
+
+
+    </form>
+    <div style="width:80%;">
+        <p style="margin-top: 25%">Already Have An Account Just Login</p>
+        <button onclick="showForm('lfc')" class="showLoginFormBtn">Login</button>
+        <div id="lfc" class="loginFormContainer">
+            <form action = "../applicationLayer/login.php" class="loginForm" method="POST">
+                <label for="loginEmail"><b>Email</b></label>
+                <input type="email"  placeholder="Enter Email" id="loginEmail" name="loginEmail" required>
+                <label for="loginPsw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id ="loginPsw" name="loginPsw" required>
+                <div style="margin-top: 1%">
+                    <div style="float:left;margin-right:20px;">
+                        <input style="display:inline" type=radio name="loginType" id="patient" value="patient" required>
+                        <label style="display:inline" for="patient"><b>Patient</b></label>
+                    </div>
+                    <div style="float:left;margin-right:20px;">
+                        <input style="display:inline" type=radio name="loginType" id="doctor" value="doctor" required>
+                        <label style="display:inline" for="doctor"><b>Doctor</b></label>
+                    </div>
+                    <div style="float:left;margin-right:20px;">
+                        <input style="display:inline" type=radio name="loginType" id="organ_donor" value="organ" required>
+                        <label style="display:inline" for="organ_donor"><b>Donor</b></label>
+                    </div>
+                    <div style="float:left;">
+                        <input style="display:inline" type=radio name="loginType" id="admin" value="admin" required>
+                        <label style="display:inline" for="admin"><b>Admin</b></label>
+                    </div>
+                </div>
+                <button class="loginBtn" name="loginBtn" type="submit">Login</button>
+            </form>
+    </div>
+</div>
+    <script>
+
+        function showForm(id) {
+            var modal = document.getElementById(id);
+            modal.style.display="block";
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    enableLoginForm();
+                }
+            }
+        }
+        function hideDoctorDiv() {
+            document.getElementById('doctorDiv').style.display='none';
+            document.getElementById("docSpec").required = false;
+        }
+        function showDoctorDiv(){
+            document.getElementById('doctorDiv').style.display='block';
+            document.getElementById("docSpec").required =true;
+        }
+
+        function hideOrganDiv() {
+            document.getElementById('organDiv').style.display='none';
+            document.getElementById("bloodType").required = false;
+            document.getElementById("organ").required = false;
+        }
+        function showOrganDiv() {
+            document.getElementById('organDiv').style.display='block';
+            document.getElementById("bloodType").required = true;
+            document.getElementById("organ").required = true;
+        }
+    </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,119 @@
+body{
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #2d2d2d;
+    color: rgb(213, 213, 213);
+}
+
+
+.signUpForm label,text{
+    display: block;padding:5px 0px 5px 0px
+}
+.signUpForm{
+    margin-left:15%;
+    width: 80%;
+
+}
+.signUpForm input[type=text], .signUpForm input[type=password],.signUpForm input[type=email] {
+    padding: 8px 15px;
+    margin: 0px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.signUpForm hr{
+    width: 60%;
+    margin-left: 0px;
+}
+.doctorDiv{
+     display: none;
+ }
+
+.doctorDiv select{
+    display: block;
+    padding: 7px 15px;
+    margin :0;
+    box-sizing: border-box;
+    border: 1px solid #2d2d2d;
+    background-color: #fff;
+}
+
+.organDiv{
+    display: none;
+}
+.organDiv select{
+    display: block;
+    padding: 7px 15px;
+    margin :0;
+    box-sizing: border-box;
+    border: 1px solid #2d2d2d;
+    background-color: #fff;
+}
+
+.signUpBtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+}
+.signUpBtn:hover {
+    opacity:1;
+}
+.showLoginFormBtn {
+    background-color: #1565C0;
+    color: white;
+    font-size: 14px;
+    padding: 16px 10px;
+
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+
+.loginFormContainer {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.loginForm{
+    padding:16px;
+    background-color: #2d2d2d;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+
+}
+.loginForm label,text {
+    display: block;padding:5px 0px 5px 0px
+}
+.loginForm input[type=text], .loginForm input[type=password],.loginForm input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.loginBtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.loginBtn:hover {
+    opacity:1;
+}
+

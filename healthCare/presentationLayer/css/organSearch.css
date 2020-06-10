@@ -1,0 +1,26 @@
+.organSearchForm{
+    margin-left: 10%;
+}
+.organSearchForm  select{
+    display: block;
+    padding: 7px 15px;
+    margin :0;
+    box-sizing: border-box;
+    border: 1px solid #2d2d2d;
+    background-color: #fff;
+}
+.searchBtn{
+    background-color: #4CAF50;
+    color: white;
+    height:40px;
+    float: left;
+    margin-top: 5%;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+
+}
+.searchBtn:hover {
+    opacity:1;
+}

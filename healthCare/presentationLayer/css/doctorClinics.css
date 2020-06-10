@@ -1,0 +1,67 @@
+.showAddClinicFormBtn{
+    background-color: #1565C0;
+    color: white;
+    font-size: 14px;
+    padding: 16px 10px;
+    float:right;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    margin-right: 10%;
+}
+
+.addClinicFormContainer {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.addClinicForm{
+    padding:16px;
+    background-color: #2d2d2d;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+
+}
+.addClinicForm label,text{
+    display: block;padding:5px 0px 5px 0px
+}
+
+.addClinicForm  select{
+    display: block;
+    padding: 7px 15px;
+    margin :0;
+    width:100%;
+    box-sizing: border-box;
+    border: 1px solid #2d2d2d;
+    background-color: #fff;
+}
+.addClinicForm input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.addClinicBtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.addClinicBtn:hover {
+    opacity:1;
+}
