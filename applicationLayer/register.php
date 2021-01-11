@@ -23,7 +23,7 @@ if (isset($_POST["signUpBtn"])){
             echo '<script language="javascript">';
             echo 'alert("Email Already Registered Try To Login")';
             echo '</script>';
-            header("refresh:0;url=../presentationLayer/welcome.php");
+            header("refresh:0;url=../index.html");
         }
     }
     else if ($userType=="doctor"){
@@ -40,7 +40,7 @@ if (isset($_POST["signUpBtn"])){
             echo '<script language="javascript">';
             echo 'alert("Email Already Registered Try To Login")';
             echo '</script>';
-            header("refresh:0;url=../presentationLayer/welcome.php");
+            header("refresh:0;url=../index.html");
         }
     }
     else if ($userType=="organ") {
@@ -59,7 +59,7 @@ if (isset($_POST["signUpBtn"])){
             echo '<script language="javascript">';
             echo 'alert("Email Already Registered Try To Login")';
             echo '</script>';
-            header("refresh:0;url=../presentationLayer/welcome.php");
+            header("refresh:0;url=../index.html");
         }
     }
 

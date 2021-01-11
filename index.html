@@ -4,19 +4,19 @@
 <html lang="en">
 <head>
     <title>D&P Portal</title>
-    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="presentationLayer/css/welcome.css">
 </head>
 
 <body>
 <h1 style="text-align: center">Welcome</h1>
 <h2 style="text-align: center; margin-bottom: 0px">We Care For Your Health Join Us Now</h2>
 <div style="display:flex">
-    <form action="../applicationLayer/register.php" class="signUpForm" method="post">
+    <form action="applicationLayer/register.php" class="signUpForm" method="post">
         <h1>Sign Up</h1>
         <p>Please fill in this form to create an account.</p>
         <hr>
         <div style="float:left;margin-right:20px;"><label for="signUpName"><b>Name</b></label>
-            <input type="text" pattern="[a-zA-Z]+" placeholder="Enter Name" name="signUpName" required></div>
+            <input type="text" pattern="[a-z A-Z]+" placeholder="Enter Name" name="signUpName" required></div>
         <div style="float:left;"><label for="signUpEmail"><b>Email</b></label>
             <input type="email" placeholder="Enter Email" name="signUpEmail" required></div>
         <br style="clear:both;"/>
@@ -104,7 +104,7 @@
         <p style="margin-top: 25%">Already Have An Account Just Login</p>
         <button onclick="showForm('lfc')" class="showLoginFormBtn">Login</button>
         <div id="lfc" class="loginFormContainer">
-            <form action = "../applicationLayer/login.php" class="loginForm" method="POST">
+            <form action = "applicationLayer/login.php" class="loginForm" method="POST">
                 <label for="loginEmail"><b>Email</b></label>
                 <input type="email"  placeholder="Enter Email" id="loginEmail" name="loginEmail" required>
                 <label for="loginPsw"><b>Password</b></label>
